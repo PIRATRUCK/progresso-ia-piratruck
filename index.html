@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0f1a">
+<title>Progresso da Frente de IA — Piratruck</title>
+<style>
+  :root{--bg:#0b0f1a;--card:#141a2b;--card2:#1b2236;--line:#28304a;--txt:#eef2fb;--mut:#95a0bd;
+    --red:#e11d2a;--red2:#ff4d58;--grn:#22c55e;--yel:#eab308;--blu:#3b82f6;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(160deg,#0b0f1a,#0e1424);color:var(--txt);line-height:1.45}
+  .wrap{max-width:900px;margin:0 auto;padding:20px 16px 70px}
+  header.hero{background:linear-gradient(120deg,#e11d2a22,#141a2b);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-top:10px}
+  .hero h1{margin:0;font-size:23px}
+  .hero .sub{color:var(--mut);font-size:13.5px;margin-top:5px}
+  .prog{margin-top:16px}
+  .prog .t{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:6px;color:var(--mut)}
+  .prog .track{background:#0c1120;border:1px solid var(--line);border-radius:9px;height:14px;overflow:hidden}
+  .prog .fill{height:100%;background:linear-gradient(90deg,var(--grn),#4ade80);border-radius:9px}
+  h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:1.3px;color:var(--mut);margin:30px 0 14px;font-weight:700}
+  .mod{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:14px;overflow:hidden}
+  .mod .head{display:flex;align-items:center;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line)}
+  .mod .num{width:40px;height:40px;flex:0 0 40px;border-radius:50%;background:#0c1120;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px}
+  .mod .ti{flex:1}
+  .mod .ti .nm{font-weight:700;font-size:15.5px;letter-spacing:.3px}
+  .mod .ti .st{font-size:12.5px;margin-top:2px;display:flex;align-items:center;gap:6px}
+  .badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .b-done{background:#0f2e1c;color:#4ade80;border:1px solid #1c5334}
+  .b-run{background:#2e2708;color:#eab308;border:1px solid #5a4a10}
+  .b-todo{background:#1a2030;color:#95a0bd;border:1px solid var(--line)}
+  .items{padding:8px 18px 14px}
+  .it{display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px dashed #202840}
+  .it:last-child{border-bottom:none}
+  .it .ic{width:22px;height:22px;flex:0 0 22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800}
+  .i-done{background:var(--grn);color:#04210f}
+  .i-run{background:var(--yel);color:#2a2205}
+  .i-todo{background:#0c1120;color:var(--mut);border:1px solid var(--line)}
+  .it .tx{flex:1;font-size:13.5px}
+  .it .tx small{display:block;color:var(--mut);font-size:11.5px;margin-top:1px}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:30px;border-top:1px solid var(--line);padding-top:16px}
+</style></head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>🚀 Progresso da Frente de Dados &amp; IA</h1>
+    <div class="sub">Piratruck / Guerra · o que já foi construído com IA · conduzido por Kayque Souza · atualizado em 09/09/2026</div>
+    <div class="prog">
+      <div class="t"><span>Progresso geral da jornada</span><span><b style="color:var(--grn)">70%</b></span></div>
+      <div class="track"><div class="fill" style="width:70%"></div></div>
+    </div>
+  </header>
+
+  <h2 class="sec">📚 Todos os módulos</h2>
+
+  <div class="mod">
+    <div class="head"><div class="num">1</div><div class="ti"><div class="nm">FUNDAÇÃO</div><div class="st"><span class="badge b-done">✓ Completo</span></div></div></div>
+    <div class="items">
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">VPS + OpenClaw no ar<small>infra própria rodando 24/7</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Agente Natasha (dados/IA)<small>orquestra e executa; memória versionada no Git</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">6 assistentes de IA no Telegram<small>Natasha, Financeiro, RH, Fiscal, Marketing, Ademicon</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Relatório diário automático<small>resumo do dia às 17h</small></div></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="head"><div class="num">2</div><div class="ti"><div class="nm">BASE DE DADOS COMERCIAL</div><div class="st"><span class="badge b-done">✓ Completo</span></div></div></div>
+    <div class="items">
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Base única de clientes<small>1.147 contatos, limpos e sem duplicados</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Emplacamentos 2026 mapeados<small>1.737 registros, atualização mensal do BI Guerra</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Prospecção por CNPJ com telefone<small>listas por vendedor, exclui operações fora do escopo</small></div></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="head"><div class="num">3</div><div class="ti"><div class="nm">SISTEMAS NO AR</div><div class="st"><span class="badge b-done">✓ Completo · 11 sistemas</span></div></div></div>
+    <div class="items">
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">CRM Piratruck<small>fila de ligação, prioridade e histórico</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Orçamento + Cotação de Implementos<small>propostas com preço, histórico e PDF</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Checklist de Veículos<small>vistoria com foto</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Painel Financeiro + Agenda<small>títulos, pagamentos e compromissos</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Mapas de território + Prospecção de Peças<small>divisão por vendedor e conversão</small></div></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="head"><div class="num">4</div><div class="ti"><div class="nm">INTELIGÊNCIA DE MERCADO</div><div class="st"><span class="badge b-run">⏳ Em andamento</span></div></div></div>
+    <div class="items">
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Share da Guerra por segmento + ranking<small>Guerra 4º fabricante · share 10,4%</small></div></div>
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Mapa de mercado por cidade e vendedor<small>heat de emplacamentos, filtro por marca/família</small></div></div>
+      <div class="it"><div class="ic i-run">◐</div><div class="tx">Plano de ação por segmento<small>fechar a distância pros concorrentes</small></div></div>
+      <div class="it"><div class="ic i-todo">○</div><div class="tx">Cenário de regiões com a base nova<small>redo dos 1.737 (docx ainda nos números antigos)</small></div></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="head"><div class="num">5</div><div class="ti"><div class="nm">AUTOMAÇÃO &amp; IA</div><div class="st"><span class="badge b-run">⏳ Em andamento</span></div></div></div>
+    <div class="items">
+      <div class="it"><div class="ic i-done">✓</div><div class="tx">Acesso ao BI da fábrica (Guerra)<small>base de mercado mês a mês</small></div></div>
+      <div class="it"><div class="ic i-run">◐</div><div class="tx">Atualização de emplacamentos<small>hoje semi-automática (você envia o Excel, eu processo tudo)</small></div></div>
+      <div class="it"><div class="ic i-todo">○</div><div class="tx">Pipeline 100% automático do BI<small>depende de acesso read-only ao SQL da fábrica</small></div></div>
+    </div>
+  </div>
+
+  <div class="mod">
+    <div class="head"><div class="num">6</div><div class="ti"><div class="nm">PRÓXIMOS PASSOS</div><div class="st"><span class="badge b-todo">○ A fazer</span></div></div></div>
+    <div class="items">
+      <div class="it"><div class="ic i-todo">○</div><div class="tx">IA no Financeiro, Administrativo e Peças<small>levar o que funciona no comercial pras outras áreas</small></div></div>
+      <div class="it"><div class="ic i-todo">○</div><div class="tx">Histórico completo de clientes<small>consolidar compra a compra por CNPJ</small></div></div>
+      <div class="it"><div class="ic i-todo">○</div><div class="tx">Ranking agregado por CNPJ<small>corrigir grafias diferentes do mesmo cliente</small></div></div>
+    </div>
+  </div>
+
+  <div class="foot">Progresso da Frente de Dados &amp; IA · Piratruck / Guerra — conduzida por <b>Kayque Souza</b>. Painel de acompanhamento interno.</div>
+</div>
+</body>
+</html>
