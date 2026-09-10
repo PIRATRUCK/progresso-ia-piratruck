@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b0f1a">
+<meta name="theme-color" content="#0d0d0d">
 <title>Progresso da Frente de IA — Piratruck</title>
 <style>
-  :root{--bg:#0b0f1a;--card:#141a2b;--card2:#1b2236;--line:#28304a;--txt:#eef2fb;--mut:#95a0bd;
-    --red:#e11d2a;--red2:#ff4d58;--grn:#22c55e;--yel:#eab308;--blu:#3b82f6;}
+  :root{/* Padrão Guerra: amarelo + preto */
+    --bg:#0d0d0d;--card:#161616;--card2:#1f1f1f;--line:#333333;--txt:#f5f5f5;--mut:#a3a3a3;
+    --red:#f5b301;--red2:#ffc20e;--grn:#ffc20e;--yel:#e0a500;--blu:#8a8a8a;}
   *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(160deg,#0b0f1a,#0e1424);color:var(--txt);line-height:1.45}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(160deg,#0d0d0d,#000);color:var(--txt);line-height:1.45}
   .wrap{max-width:900px;margin:0 auto;padding:20px 16px 70px}
-  header.hero{background:linear-gradient(120deg,#e11d2a22,#141a2b);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-top:10px}
+  header.hero{background:linear-gradient(120deg,#ffc20e22,#161616);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-top:10px}
   .hero h1{margin:0;font-size:23px}
   .hero .sub{color:var(--mut);font-size:13.5px;margin-top:5px}
   .prog{margin-top:16px}
   .prog .t{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:6px;color:var(--mut)}
   .prog .track{background:#0c1120;border:1px solid var(--line);border-radius:9px;height:14px;overflow:hidden}
-  .prog .fill{height:100%;background:linear-gradient(90deg,var(--grn),#4ade80);border-radius:9px}
+  .prog .fill{height:100%;background:linear-gradient(90deg,#e0a500,#ffc20e);border-radius:9px}
   h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:1.3px;color:var(--mut);margin:30px 0 14px;font-weight:700}
   .mod{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:14px;overflow:hidden}
   .mod .head{display:flex;align-items:center;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line)}
@@ -26,14 +27,14 @@
   .mod .ti .nm{font-weight:700;font-size:15.5px;letter-spacing:.3px}
   .mod .ti .st{font-size:12.5px;margin-top:2px;display:flex;align-items:center;gap:6px}
   .badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
-  .b-done{background:#0f2e1c;color:#4ade80;border:1px solid #1c5334}
+  .b-done{background:#3a2e05;color:#ffc20e;border:1px solid #6b5410}
   .b-run{background:#2e2708;color:#eab308;border:1px solid #5a4a10}
   .b-todo{background:#1a2030;color:#95a0bd;border:1px solid var(--line)}
   .items{padding:8px 18px 14px}
   .it{display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px dashed #202840}
   .it:last-child{border-bottom:none}
   .it .ic{width:22px;height:22px;flex:0 0 22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800}
-  .i-done{background:var(--grn);color:#04210f}
+  .i-done{background:#ffc20e;color:#111}
   .i-run{background:var(--yel);color:#2a2205}
   .i-todo{background:#0c1120;color:var(--mut);border:1px solid var(--line)}
   .it .tx{flex:1;font-size:13.5px}
